@@ -9,3 +9,9 @@ class Car:
         
     def cost(self, distance, galon_price=2.5):
         return "$%.2f" % (galon_price*distance/self.mpg)
+
+    
+# Define a Prius Car
+class Prius(Car):
+    def __init__(self, doors=4, mpg=50):
+        super(Prius, self).__init__(doors=doors, mpg=mpg)
