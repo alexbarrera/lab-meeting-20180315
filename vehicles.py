@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 # Define the class of vehicle Car
-class Car:
+class Car(object):
     def __init__(self, doors=3, mpg=30):
         self.wheels = 4
         self.doors = doors
@@ -15,3 +15,10 @@ class Car:
 class Prius(Car):
     def __init__(self, doors=4, mpg=50):
         super(Prius, self).__init__(doors=doors, mpg=mpg)
+
+
+# Define a Hyperloop
+class Hyperloop(Car):
+    def __init__(self, doors=200, mpg=300):
+        super(Hyperloop, self).__init__(doors=doors, mpg=mpg)
+        
