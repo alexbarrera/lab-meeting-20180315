@@ -16,4 +16,8 @@ class Prius(Car):
     def __init__(self, doors=4, mpg=52.4):
         super(Prius, self).__init__(doors=doors, mpg=mpg)
 
-        
+
+# Define a Hyperloop
+class Hyperloop(Car):
+    def __init__(self, doors=200, mpg=300):
+        super(Hyperloop, self).__init__(doors=doors, mpg=mpg)
